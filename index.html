@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_enimation</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #outer {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+        #inner {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+        }
+        #play {
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(229, 229, 124);
+            cursor: pointer;
+        }
+        #play:hover {
+            transform: scale(.98);
+            background-color: rgb(241, 241, 160);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+        <div id="outer">
+            <div id="inner">
+
+            </div>
+        </div>
+        <button onclick="anim()" id="play">Play</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
